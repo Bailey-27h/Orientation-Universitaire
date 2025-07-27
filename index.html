@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="fill_choices();start()">
+        <main>
+            <h2>Liste des choix d'orientation universitaire</h2>
+            
+            <h4>La Formule Globale (FG) : <span id='fg'></span></h4>
+            <h4>Le rang selon la Formule Globale : <span id='rang'></span></h4>
+            <br>
+            <div id="table-container">
+                <table>
+                    <thead>
+                        <tr id="tr0">
+                            <th id="th1">Choix</th>
+                            <th id="th2">Code</th>
+                            <th id="th3">Parcours d'Étude</th>
+                            <th id="th4">Établissement</th>
+                            <th id="th5">Sigle</th>
+                            <th id="th6">Université Affiliée</th>
+                            <th id="th7">Spécialisations</th>
+                            <th id="th8">Places Disponibles</th>
+                            <th id="th9">Dernier Score d'Admission</th>
+                            <th id="th10">Mon Score</th>
+                            <th id="th11">Écart de Score</th>
+                            <th id="th12">Plus d'informations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tr1" data-state="" onclick="morinfo(1)">
+                            <td id="td1-1">1</td>
+                            <td id="td1-2"></td>
+                            <td id="td1-3"></td>
+                            <td id="td1-4"></td>
+                            <td id="td1-5"></td>
+                            <td id="td1-6"></td>
+                            <td id="td1-7"></td>
+                            <td id="td1-8"></td>
+                            <td id="td1-9"></td>
+                            <td id="td1-10"></td>
+                            <td id="td1-11"></td>
+                            <td id="td1-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr2" data-state="" onclick="morinfo(2)">
+                            <td id="td2-1">2</td>
+                            <td id="td2-2"></td>
+                            <td id="td2-3"></td>
+                            <td id="td2-4"></td>
+                            <td id="td2-5"></td>
+                            <td id="td2-6"></td>
+                            <td id="td2-7"></td>
+                            <td id="td2-8"></td>
+                            <td id="td2-9"></td>
+                            <td id="td2-10"></td>
+                            <td id="td2-11"></td>
+                            <td id="td2-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr3" data-state="" onclick="morinfo(3)">
+                            <td id="td3-1">3</td>
+                            <td id="td3-2"></td>
+                            <td id="td3-3"></td>
+                            <td id="td3-4"></td>
+                            <td id="td3-5"></td>
+                            <td id="td3-6"></td>
+                            <td id="td3-7"></td>
+                            <td id="td3-8"></td>
+                            <td id="td3-9"></td>
+                            <td id="td3-10"></td>
+                            <td id="td3-11"></td>
+                            <td id="td3-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr4" data-state="" onclick="morinfo(4)">
+                            <td id="td4-1">4</td>
+                            <td id="td4-2"></td>
+                            <td id="td4-3"></td>
+                            <td id="td4-4"></td>
+                            <td id="td4-5"></td>
+                            <td id="td4-6"></td>
+                            <td id="td4-7"></td>
+                            <td id="td4-8"></td>
+                            <td id="td4-9"></td>
+                            <td id="td4-10"></td>
+                            <td id="td4-11"></td>
+                            <td id="td4-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr5" data-state="" onclick="morinfo(5)">
+                            <td id="td5-1">5</td>
+                            <td id="td5-2"></td>
+                            <td id="td5-3"></td>
+                            <td id="td5-4"></td>
+                            <td id="td5-5"></td>
+                            <td id="td5-6"></td>
+                            <td id="td5-7"></td>
+                            <td id="td5-8"></td>
+                            <td id="td5-9"></td>
+                            <td id="td5-10"></td>
+                            <td id="td5-11"></td>
+                            <td id="td5-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr6" data-state="" onclick="morinfo(6)">
+                            <td id="td6-1">6</td>
+                            <td id="td6-2"></td>
+                            <td id="td6-3"></td>
+                            <td id="td6-4"></td>
+                            <td id="td6-5"></td>
+                            <td id="td6-6"></td>
+                            <td id="td6-7"></td>
+                            <td id="td6-8"></td>
+                            <td id="td6-9"></td>
+                            <td id="td6-10"></td>
+                            <td id="td6-11"></td>
+                            <td id="td6-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr7" data-state="" onclick="morinfo(7)">
+                            <td id="td7-1">7</td>
+                            <td id="td7-2"></td>
+                            <td id="td7-3"></td>
+                            <td id="td7-4"></td>
+                            <td id="td7-5"></td>
+                            <td id="td7-6"></td>
+                            <td id="td7-7"></td>
+                            <td id="td7-8"></td>
+                            <td id="td7-9"></td>
+                            <td id="td7-10"></td>
+                            <td id="td7-11"></td>
+                            <td id="td7-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr8" data-state="" onclick="morinfo(8)">
+                            <td id="td8-1">8</td>
+                            <td id="td8-2"></td>
+                            <td id="td8-3"></td>
+                            <td id="td8-4"></td>
+                            <td id="td8-5"></td>
+                            <td id="td8-6"></td>
+                            <td id="td8-7"></td>
+                            <td id="td8-8"></td>
+                            <td id="td8-9"></td>
+                            <td id="td8-10"></td>
+                            <td id="td8-11"></td>
+                            <td id="td8-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr9" data-state="" onclick="morinfo(9)">
+                            <td id="td9-1">9</td>
+                            <td id="td9-2"></td>
+                            <td id="td9-3"></td>
+                            <td id="td9-4"></td>
+                            <td id="td9-5"></td>
+                            <td id="td9-6"></td>
+                            <td id="td9-7"></td>
+                            <td id="td9-8"></td>
+                            <td id="td9-9"></td>
+                            <td id="td9-10"></td>
+                            <td id="td9-11"></td>
+                            <td id="td9-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                        <tr id="tr10" data-state="" onclick="morinfo(10)">
+                            <td id="td10-1">10</td>
+                            <td id="td10-2"></td>
+                            <td id="td10-3"></td>
+                            <td id="td10-4"></td>
+                            <td id="td10-5"></td>
+                            <td id="td10-6"></td>
+                            <td id="td10-7"></td>
+                            <td id="td10-8"></td>
+                            <td id="td10-9"></td>
+                            <td id="td10-10"></td>
+                            <td id="td10-11"></td>
+                            <td id="td10-12" class="pinfo">Plus d'information ▼</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script src="script.js"></script>
+        </main>
+        <div id="popup" data-open="1">
+            <span id="popup-hide" onclick="popup_show()">X</span>
+            <span id="popup-next" onclick="next()">V</span>
+            <div id="popup-content">
+                <img src="Bolbol.png" alt=""><br>
+                <div id="pup1">
+                    <h1>¡Bienvenido!</h1>
+                    <p>Bilél Oubay vous présente sa liste de choix pour l'Orientation Universitaire</p>
+                    <br>
+                </div>
+                <div id="pup2">
+                    <h1>Schéma des couleurs</h1>
+                    <span id="diff1">
+                        Différence &lt; 5 
+                    </span>
+                    <span id="diff2">
+                        5 &lt;= Différence &lt;= 5
+                    </span>
+                    <span id="diff3">
+                        Différence > 5
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
